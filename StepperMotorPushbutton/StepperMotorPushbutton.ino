@@ -66,7 +66,7 @@ void garageAction(float factor){
     delay(10000);
   }else if(isOpen == HIGH){
     delay(15);
-  }
+  }                                              
 }
 
 void loop()
