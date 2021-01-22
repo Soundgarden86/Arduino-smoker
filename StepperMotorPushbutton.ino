@@ -60,8 +60,11 @@ void garageAction(float factor){
   
    // Rotate CW 1/2 turn slowly
   StepsRequired  =  STEPS_PER_OUT_REV*factor; 
+//   This will make your steppermotor move slower or faster.
   steppermotor.setSpeed(1000);   
   steppermotor.step(StepsRequired);
+  
+  
   if(isOpen == LOW){
     delay(10000);
   }else if(isOpen == HIGH){
